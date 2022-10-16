@@ -6,6 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/SandBox.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+=======
+    path: Assets/Scenes/Over.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Under.unity
+    guid: acead5dcfa354374e8270fe9b1f24a45
+>>>>>>> Stashed changes
   m_configObjects: {}
