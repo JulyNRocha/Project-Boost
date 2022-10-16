@@ -556,6 +556,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1062993504, guid: 7a0e2f9512cad774b8eb588382b78fdb, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6dd242cb2da81fb4caa0abb8951c98cc, type: 3}
+    - target: {fileID: 1062993504, guid: 7a0e2f9512cad774b8eb588382b78fdb, type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e46c7fde31d126744a1d5d41018075f7, type: 3}
+    - target: {fileID: 1986727225, guid: 7a0e2f9512cad774b8eb588382b78fdb, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: f9f2ba31863982648b9114ad74fc5ad0, type: 3}
     - target: {fileID: 2604661276845446147, guid: 7a0e2f9512cad774b8eb588382b78fdb, type: 3}
       propertyPath: m_Name
       value: Rocket
