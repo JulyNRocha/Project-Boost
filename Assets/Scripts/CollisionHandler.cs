@@ -1,7 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class CollisonHandler : MonoBehaviour
+public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float deleySeconds = 2f;
     [SerializeField] AudioClip crashSound;
@@ -14,6 +14,7 @@ public class CollisonHandler : MonoBehaviour
     Movement movementComponent;
 
     bool isTransitioning = false;
+    bool collisionDisable = false;
 
     void Start()
     {
@@ -21,9 +22,26 @@ public class CollisonHandler : MonoBehaviour
         movementComponent = GetComponent<Movement>();
     }
 
+    void Update()
+    {
+        ProcessCheatsDeabug();
+    }
+
+    void ProcessCheatsDeabug()
+    {
+        if (Input.GetKey(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            collisionDisable = !collisionDisable;
+        }
+    }
+
     private void OnCollisionEnter(Collision other)
     {
-        if(isTransitioning) { return; }
+        if(isTransitioning || collisionDisable) { return; }
 
         switch (other.gameObject.tag)
         {
